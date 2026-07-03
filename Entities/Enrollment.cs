@@ -8,7 +8,9 @@ public class Enrollment
     public decimal? Grade { get; set; }
     public DateTime EnrolledAt { get; set; } = DateTime.UtcNow;
 
-    // Navigation properties
+    // Session 3: Bulk archiving
+    public bool IsArchived { get; set; } = false;
+
     public Student Student { get; set; } = null!;
     public Course Course { get; set; } = null!;
 }
