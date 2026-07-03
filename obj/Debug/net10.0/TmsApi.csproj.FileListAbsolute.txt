@@ -39,3 +39,5 @@ C:\Users\Hp\Desktop\04 Programming-Source\DotNet\TmsApi\obj\Debug\net10.0\refint
 C:\Users\Hp\Desktop\04 Programming-Source\DotNet\TmsApi\obj\Debug\net10.0\TmsApi.pdb
 C:\Users\Hp\Desktop\04 Programming-Source\DotNet\TmsApi\obj\Debug\net10.0\TmsApi.genruntimeconfig.cache
 C:\Users\Hp\Desktop\04 Programming-Source\DotNet\TmsApi\obj\Debug\net10.0\ref\TmsApi.dll
+C:\Users\Hp\Desktop\04 Programming-Source\DotNet\TmsApi\bin\Debug\net10.0\Scalar.AspNetCore.dll
+C:\Users\Hp\Desktop\04 Programming-Source\DotNet\TmsApi\obj\Debug\net10.0\TmsApi.sourcelink.json
