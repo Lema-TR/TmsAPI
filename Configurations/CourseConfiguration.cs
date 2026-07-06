@@ -14,6 +14,8 @@ public class CourseConfiguration : IEntityTypeConfiguration<Course>
 
         // One-to-many: Course -> Enrollments
         // We use Restrict because a course with existing enrollments should NOT be accidentally cascade-deleted.
+        builder.HasIndex(c => c.Code).IsUnique();
+        builder.Property(c => c.MaxCapacity).IsRequired();
         builder.HasMany(c => c.Enrollments)
                .WithOne(e => e.Course)
                .HasForeignKey(e => e.CourseId)

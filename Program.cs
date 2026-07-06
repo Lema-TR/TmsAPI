@@ -1,7 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
-using TmsApi.Entities;
 using TmsApi.Data;
+using TmsApi.Entities;
+using TmsApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -55,9 +56,9 @@ using (var scope = app.Services.CreateScope())
 
         var courses = new List<Course>
         {
-            new() { Code = "CS-101", Title = "Intro to CS", Capacity = 30 },
-            new() { Code = "CS-201", Title = "Data Structures", Capacity = 25 },
-            new() { Code = "MAT-101", Title = "Calculus I", Capacity = 40 }
+            new() { Code = "CS-101", Title = "Intro to CS", MaxCapacity = 30 },
+            new() { Code = "CS-201", Title = "Data Structures", MaxCapacity = 25 },
+            new() { Code = "MAT-101", Title = "Calculus I", MaxCapacity = 40 }
         };
         context.Courses.AddRange(courses);
         context.SaveChanges();
